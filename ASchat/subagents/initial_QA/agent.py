@@ -2,7 +2,7 @@ from google.adk.agents import Agent
 from . import prompt
 
 
-root_agent = Agent(
+QA_agent = Agent(
     model='gemini-2.5-flash',
     name='root_agent',
     description='QA orchestrator for vores ASChat Agent',

@@ -1,6 +1,6 @@
 from google.adk.agents import Agent
 
-from ..config import config
+from ...config import config
 
 writer = Agent(
     model=config.critic_model,
