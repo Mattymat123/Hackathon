@@ -1,5 +1,3 @@
-from extra_knowledge import ØAV
-
 
 
 test_prompt = f"""
@@ -37,7 +35,6 @@ Conclusion:
 Briefly conclude the interaction, perhaps asking if the user wants to explore any area further.
 
 Ekstra information om aktstykkes sammensætning for at kvalificere spørgsmål findes her: 
-{ØAV.aktstykke_sammensætning}
 
 
 

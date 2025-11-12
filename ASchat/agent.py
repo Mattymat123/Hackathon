@@ -5,6 +5,7 @@ from google.adk.tools.agent_tool import AgentTool
 
 
 from .subagents.initial_QA import QA_agent
+from .subagents.researcher import research_agent
 
 root_agent = Agent(
     model='gemini-2.5-flash',
@@ -13,6 +14,7 @@ root_agent = Agent(
     instruction=prompt.orchestrator_prompt,
     tools=[
         AgentTool(agent=QA_agent),
+        AgentTool(agent=research_agent),
     ],
     
 )

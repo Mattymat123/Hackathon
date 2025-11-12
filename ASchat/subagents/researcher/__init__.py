@@ -1,2 +1,2 @@
-from .agent import researcher_agent
+from .agent import research_agent
 

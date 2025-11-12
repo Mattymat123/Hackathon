@@ -5,9 +5,9 @@ from . import prompt
 
 MODEL = "gemini-2.5-pro"
 
-researcher_agent = Agent(
+research_agent = Agent(
     model=MODEL,
-    name="researcher_agent",
+    name="research_agent",
     instruction=prompt.RESEARCHER_PROMPT,
     output_key="",
     tools=[google_search],
