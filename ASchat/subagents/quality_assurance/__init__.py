@@ -1,3 +1,3 @@
-from .writer import writer
+from .agent import quality_assurance
 
-__all__ = ['writer']
+__all__ = ['quality_assurance']

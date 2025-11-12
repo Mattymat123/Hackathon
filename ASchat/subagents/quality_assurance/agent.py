@@ -5,7 +5,7 @@ from ...config import config
 
 quality_assurance = Agent(
     model="gemini-2.5-flash",
-    name="writer",
+    name="quality_assurance",
     description="Edits a technical blog post based on user feedback.",
     instruction=qa_prompt,
     output_key="QA_output",

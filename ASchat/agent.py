@@ -6,7 +6,7 @@ from .subagents.initial_QA import QA_agent
 from .subagents.writer import writer
 from .subagents.researcher import research_agent
 from .subagents.quality_assurance.agent import quality_assurance
-from .subagents.output_agent.agent import quality_assurance as output_agent_quality_assurance
+from .subagents.output_agent.agent import output_agent
 
 root_agent = Agent(
     model='gemini-2.5-flash',
