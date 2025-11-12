@@ -8,6 +8,6 @@ research_agent = Agent(
     model=MODEL,
     name="research_agent",
     instruction=prompt.RESEARCHER_PROMPT,
-    output_key="",
+    output_key="research_results",
     tools=[google_search],
 )

@@ -8,6 +8,6 @@ writer = Agent(
     name="writer",
     description="Edits a technical blog post based on user feedback.",
     instruction=writer_prompt,
-    output_key="blog_post",
+    output_key="QA_output",
     #after_agent_callback=suppress_output_callback,
 )
