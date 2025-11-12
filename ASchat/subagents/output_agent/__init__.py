@@ -1,3 +1,3 @@
-from .writer import writer
+from .agent import output_agent
 
-__all__ = ['writer']
+__all__ = ['output_agent']
