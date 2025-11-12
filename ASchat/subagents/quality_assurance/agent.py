@@ -1,13 +1,13 @@
 from google.adk.agents import Agent
 from .prompt import qa_prompt
-
-from ...config import config
+from .tools import export_to_pdf
+from google.adk.tools import FunctionTool
 
 quality_assurance = Agent(
     model="gemini-2.5-flash",
-    name="writer",
-    description="Edits a technical blog post based on user feedback.",
+    name="Quality Assurance Agent",
+    description="Angenten sikrer kvaliteten af aktstykket ved at gennemgå og rette det for fejl og mangler.",
     instruction=qa_prompt,
-    output_key="QA_output",
-    #after_agent_callback=suppress_output_callback,
+    output_key="Quality Assurance Output",
+    tools=[FunctionTool(export_to_pdf)],
 )

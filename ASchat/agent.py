@@ -6,7 +6,6 @@ from .subagents.initial_QA import QA_agent
 from .subagents.writer import writer
 from .subagents.researcher import research_agent
 from .subagents.quality_assurance.agent import quality_assurance
-from .subagents.output_agent.agent import quality_assurance as output_agent_quality_assurance
 
 root_agent = Agent(
     model='gemini-2.5-flash',
@@ -18,7 +17,7 @@ root_agent = Agent(
         AgentTool(agent=QA_agent),
         AgentTool(agent=research_agent),
         AgentTool(agent=writer),
-        AgentTool(agent=quality_assurance)
+        AgentTool(agent=quality_assurance),
     ],
     
 )
