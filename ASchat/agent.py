@@ -2,10 +2,12 @@ from google.adk.agents import Agent
 
 from . import prompt
 from google.adk.tools.agent_tool import AgentTool
+from google.adk.tools import FunctionTool
 from .subagents.initial_QA import QA_agent
 from .subagents.writer import writer
 from .subagents.researcher import research_agent
 from .subagents.quality_assurance.agent import quality_assurance
+from .tools import export_to_pdf
 
 root_agent = Agent(
     model='gemini-2.5-flash',
@@ -18,6 +20,7 @@ root_agent = Agent(
         AgentTool(agent=research_agent),
         AgentTool(agent=writer),
         AgentTool(agent=quality_assurance),
+        FunctionTool(export_to_pdf),
     ],
     
 )

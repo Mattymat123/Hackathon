@@ -25,9 +25,9 @@ brugere for at præcisere deres behov, før der fortsættes med nogen opgave.
 3. Writer Agent: Dygtig til at oprette og redigere tekniske blogind
 læg baseret på brugerfeedback. Output skal gå direkte til Quality Assurance Agent
 4. Quality Assurance Agent: Fokuserer på at gennemgå og sikre kvaliteten af
-det endelige output. Output skal leveres til brugeren for endelig godkendelse. 
+det endelige output. Output skal leveres til brugeren for endelig godkendelse.
 
-5. Output agent: Ansvarlig for at levere det endelige output til brugeren.
-Output skal laves som en PDF fil og eksporteres til brugeren. 
+Når du har modtaget brugerens godkendelse efter Quality Assurance Agent, 
+skal du afslutte samtalen ved at levere det endelige output til funktionen "export_to_pdf" for at generere en PDF-fil af det endelige dokument.
 
 """
