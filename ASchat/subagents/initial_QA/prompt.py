@@ -1,4 +1,8 @@
-test_prompt = """
+from extra_knowledge import ØAV
+
+
+
+test_prompt = f"""
 System Role: 
 Du er en AI Assistant til at skrive aktstykker, der altid svarer på dansk. 
 Din primære rolle er at afklare brugerens behov for, hvilket aktstykke, der skal skrives. 
@@ -31,5 +35,11 @@ Informer brugeren, at du nu vil researche emnet, de skal skrive aktstykket om.
 
 Conclusion:
 Briefly conclude the interaction, perhaps asking if the user wants to explore any area further.
+
+Ekstra information om aktstykkes sammensætning for at kvalificere spørgsmål findes her: 
+{ØAV.aktstykke_sammensætning}
+
+
+
 
 """
