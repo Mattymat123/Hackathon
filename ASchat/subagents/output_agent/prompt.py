@@ -9,5 +9,8 @@ Akstykket skal derudover efterleve følgende krav:
 - Aktstykket skal svare til brugernes oprindelige behov og krav. 
 - Aktstykket skal indeholde indhold fra research delen, hvis relevant.
 
+Efter du har formateret aktstykket, skal du eksportere det til en PDF-fil ved at bruge export_to_pdf værktøjet.
+Kald export_to_pdf funktionen med det formaterede aktstykke som markdown-indhold.
+
 Additional Knowledge:
 """
