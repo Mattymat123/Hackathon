@@ -1,8 +1,9 @@
 import os
 import subprocess
 from datetime import datetime
+from typing import Optional
 
-def export_to_pdf(content: str, filename: str = None) -> str:
+def export_to_pdf(content: str, filename: Optional[str] = None) -> str:
     """
     Export markdown content to PDF using markdown-pdf.
     

@@ -1,6 +1,6 @@
 from markdown_pdf import MarkdownPdf, Section
 
-def export_to_pdf(content: str, filename: str) -> str:
+def export_to_pdf(content: str, filename: str = None) -> str:
     """
     Export markdown content to PDF using markdown-pdf.
     
