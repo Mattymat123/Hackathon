@@ -1,5 +1,5 @@
 
-Aktstykke_sammensætning = """
+aktstykke_sammensætning = """
 
 I nedenstående gengives Budgetvejledningens bestemmelser under punkt 3.5
 

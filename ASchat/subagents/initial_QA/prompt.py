@@ -1,3 +1,5 @@
+from .extra_knowledge import ØAV
+
 
 
 test_prompt = f"""
