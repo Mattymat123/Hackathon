@@ -1,4 +1,4 @@
-from extra_knowledge import ØAV
+from .extra_knowledge import ØAV
 
 
 
